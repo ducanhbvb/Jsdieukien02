@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+Input lenght retangular:<input id="lenght"style="text"><br/>
+Input widht retangular :<input id="widht" style="text">
+<button style="button" onclick="s()">Click Me!</button>
+<script>
+    function s() {
+        let lenght=parseInt(document.getElementById("lenght").value);
+        let widht=parseInt(document.getElementById("widht").value);
+        let retangular=lenght*widht;
+        document.write("Retangular arena= "+retangular+" (Unit arena)");
+    }
+</script>
+</body>
+</html>

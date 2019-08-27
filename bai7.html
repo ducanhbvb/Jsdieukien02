@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giaipt</title>
+</head>
+<form>
+    Nhap a <input id="a" type="text"><br/>
+    Nhap b <input id="b" type="text"><br/>
+    Nhap c <input id="c" type="text"><br/>
+    <button type="button"onclick="tinh()">Cick Me!</button>
+</form>
+<body>
+<script>
+    function tinh() {
+        let a=document.getElementById("a").value;
+        let b=document.getElementById("b").value;
+        let c=document.getElementById("c").value;
+        if(a==0){
+            if(b==0){
+                if(c==0){
+                    document.write("phuong trinh da cho vo so nghiem");
+                }
+                else {document.write("phuong trinh da cho vo nghiem");}
+            }
+            else {
+                let kq=-c/b;
+                document.write("phuong trinh da cho co 1 nghiem x="+kq);
+            }
+        }else{
+            let denta =b*b-4*a*c;
+            if(denta >=0){
+                let x1=(-b+Math.sqrt(denta))/2*a;
+                let x2=(-b-Math.sqrt(denta))/2*a;
+                document.writeln("phuong trinh da cho co 2 nhiem x1= "+x1+"; x2= "+x2);
+            }else {document.writeln("phuong trinh da cho vo nghiem");}
+        }
+
+    }
+</script>
+</body>
+</html>
