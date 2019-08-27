@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let edgeA=parseInt(prompt("input Edge a tryanglet= "));
+    let edgeB=parseInt(prompt("Input edge b tryanglet= "));
+    let edgeC=parseInt(prompt("Input edge c tryanglet= "));
+    if ((edgeA>0)&&((edgeB>0)&&(edgeC>0))){
+        if(((edgeA+edgeB)>edgeC)&&(((edgeA+edgeC)>edgeB)&&((edgeB+edgeC)>edgeA))){
+            alert("The entered numbers are the edge of a triangle");
+        }
+    }else {alert("The entered numbers are not the sides of a triangle")}
+</script>
+</body>
+</html>
