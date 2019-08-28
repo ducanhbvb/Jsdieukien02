@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>bai9</title>
 </head>
 <body>
-
+<script>
+    let price=parseInt(prompt("input electrical number= "));
+    let pay;
+    if (price<=50){
+        let pay=price*1678;
+    }else if(price<=100){
+        pay=50*1678+(price-50)*1734;
+    }else if(price<=200){
+        pay=50*1678+50*1734+(price-100)*2014;
+    }else if(price<=300){
+        pay=50*1678+50*1734+100*2014+(price-200)*2536;
+    }else if(price<=400){
+        pay=50*1678+50*1734+100*2014+100*2536+(price-300)*2834;
+    }else if(price>400){
+        pay=50*1678+50*1734+100*2014+100*2536+100*2834+(price-400)*2927;
+    }else {alert("iput munber error");}
+    alert("Total amount to be paid ="+pay);
+</script>
 </body>
 </html>

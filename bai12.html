@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai12</title>
+</head>
+<body>
+Nhập số tiền vay(triệu đồng):<input id="tienGoc"style="text"><br/>
+Nhận thời kỳ đáo hạn(ngày):<input id="thoiGianDH"style="text"><br/>
+Nhập thời gian vay(ngày):<input id="thoiGianVay" style="text"><br/>
+Nhập lãi suất = tr/ngày(ngày):<input id="laiNgay" style="text"><br/>
+<button style="button"onclick="helpMe()">Gọi 113 nhận ngay chục củ</button>
+<script>
+    function helpMe() {
+        let tienGoc=document.getElementById("tienGoc").value;
+        let thoiGianDH=document.getElementById("thoiGianDH").value;
+        let thoiGianVay=document.getElementById("thoiGianVay").value;
+        let laiNgay=document.getElementById("laiNgay").value;
+        let no=tienGoc*Math.pow((1+laiNgay*thoiGianVay/(thoiGianDH*1000)),(thoiGianVay/thoiGianDH));
+        document.write("tổng số tiền nợ sau "+thoiGianDH+" ngày là số tiền"+no);
+    }
+</script>
+</body>
+</html>

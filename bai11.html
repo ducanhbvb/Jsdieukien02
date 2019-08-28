@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let thuNhap=parseInt(prompt("input tổng thu nhập theo tháng (triệu đồng)= "));
+    let giamTru=parseInt(prompt("input giảm trừ gia cảnh= "));
+    let thuNhapTT=thuNhap-giamTru;
+    let pay;
+    if (thuNhapTT<=5){
+        pay=thuNhapTT*5/100;
+    }else if (thuNhapTT<=10){
+        pay=thuNhapTT*10/100;
+    }else if (thuNhapTT<=18){
+        pay=thuNhapTT*15/100;
+    }else if (thuNhapTT<=32){
+        pay=thuNhapTT*20/100;
+    }else if (thuNhapTT<=52){
+        pay=thuNhapTT*25/100;
+    }else if (thuNhapTT<=80){
+        pay=thuNhapTT*30/100;
+    }else if (thuNhapTT>80){
+        pay=thuNhapTT*35/100;
+    }else {alert("iput munber error");}
+    alert("Total amount to be paid ="+pay);
+</script>
+</body>
+</html>
